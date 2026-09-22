@@ -1,0 +1,4 @@
+read_verilog 4bit_ALU.v adder_4bit.v full_adder.v
+synth -top ALU
+write_verilog 4bit_ALU_synth.v
+stat

@@ -1,0 +1,11 @@
+# Read the Verilog file
+read_verilog full_adder.v
+
+# Synthesize the top module
+synth -top full_adder
+
+# Write the gate-level netlist to a new file
+write_verilog full_adder_synth.v
+
+# Show a summary of the design
+stat
